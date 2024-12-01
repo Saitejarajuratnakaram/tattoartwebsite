@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Touch Ups | Elite Tattoo Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Body Art</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700%7CLibre+Baskerville:400,400italic,700%7CCourgette">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+       /* Style for the Customization button */
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"] {
+    background-color: #ec6c04; /* Change color as needed */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"]:hover {
+    background-color: #ec6c04; /* Hover color */
+}
+
+    </style>
+    <style>
+        body {
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+            /* Prevents horizontal scrolling */
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .container1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .image-section {
+            order: 2;
+            /* This will move the image to the right */
+            flex: 1;
+            padding-left: 20px;
+            /* Adjusts spacing on the left */
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            /* Optional: adds rounded corners */
+        }
+
+        h1,
+        h2 {
+            color: #0c0000;
+        }
+
+        .price-range,
+        .gallery-item,
+        .rating-reviews,
+        .certifications,
+        .equipment-supplies,
+        .qa {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .price-range {
+            margin-bottom: 2rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33% - 1rem);
+            box-sizing: border-box;
+            padding: 1rem;
+            border: 1px solid #080808;
+            border-radius: 5px;
+            background: #f4f4f4;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .gallery-item p {
+            margin: 0.5rem 0 0;
+        }
+
+        .rating-reviews p {
+            margin: 0.5rem 0;
+        }
+
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .certifications-item {
+            flex: 1 1 calc(50% - 1rem);
+            box-sizing: border-box;
+            padding: 1rem;
+            border: 1px solid #0a0a0a;
+            border-radius: 5px;
+            background: #f4f4f4;
+        }
+
+        .certifications-item i {
+            font-size: 2rem;
+            color: #333;
+            margin-right: 0.5rem;
+        }
+
+        .certifications-item h3 {
+            margin: 0;
+        }
+
+        .equipment-supplies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .equipment-item {
+            flex: 1 1 calc(50% - 1rem);
+            box-sizing: border-box;
+            padding: 1rem;
+            border: 1px solid #090909;
+            border-radius: 5px;
+            background: #f4f4f4;
+        }
+
+        .equipment-item h3 {
+            margin: 0;
+        }
+
+        .equipment-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .equipment-item ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .qa h2 {
+            margin-top: 0;
+        }
+
+        .qa .question {
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .qa .answer {
+            margin-bottom: 1rem;
+        }
+
+        .booking-form {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .booking-form .image-container {
+            flex: 1 1 40%;
+            text-align: center;
+        }
+
+        .booking-form .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .booking-form .form-container {
+            flex: 1 1 60%;
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+
+        .booking-form .form-container h2 {
+            margin-top: 0;
+        }
+
+        .booking-form .form-container label {
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        .booking-form .form-container input,
+        .booking-form .form-container textarea,
+        .booking-form .form-container select {
+            padding: 0.5rem;
+            border: 1px solid #090909;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        .booking-form .form-container button {
+            padding: 0.5rem;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .booking-form .form-container button:hover {
+            background: #444;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+        }
+
+        .content-section {
+            order: 1;
+            /* This will keep the text on the left */
+            flex: 1;
+            padding-right: 20px;
+            /* Adjusts spacing on the right */
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 5px;
+        }
+
+        .modal-close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .container1 {
+                flex-direction: column;
+                /* For smaller screens, stack them */
+            }
+
+            .image-section,
+            .content-section {
+                padding: 0;
+                /* Remove padding for mobile layout */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page text-center">
+        <header class="section page-head page-head-default">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap" style="background: #2d2d31;">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="117px" data-xxl-stick-up-offset="117px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" type="submit"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand-name" href="index.html">BodyPoetry</a></div>
+                        </div>
+                        <div class="rd-navbar-nav-wrap">
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item "><a class="rd-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About </a>
+                                </li>
+                                      <li class="rd-nav-item active"><a class="rd-nav-link" href="service.html">Services </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Portfolio </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="customization.html">
+                                        <i class="bi bi-brush"></i> Customization
+                                    </a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+       <br>
+    <header>
+        <h1 style="color: #ddd;">Tattoo Touch Ups at Elite Tattoo Studio</h1>
+    </header>
+
+    <div class="container1">
+        <section class="section">
+            <div class="container1">
+                <div class="image-section">
+                    <img style="height: 80vh; width: 60vh; margin-top: 70px;" src="tattotouchups.webp" alt="Tattoo Touch Ups">
+                </div>
+                <div class="content-section" style="width: 190vh;">
+                    <h2>Enhance and Refresh Your Tattoo</h2>
+                    <p>At Elite Tattoo Studio, we offer professional tattoo touch-up services to keep your ink looking vibrant and fresh. Over time, tattoos can fade or lose their original clarity due to various factors such as sun exposure, skin changes, or natural aging. Our touch-up service helps restore the original details and colors of your tattoo, ensuring it continues to look its best.</p>
+
+                    <p>Whether you want to fix fading, enhance colors, or touch up lines, our skilled artists use high-quality inks and advanced techniques to refresh your tattoo to its original glory. We’ll work with you to understand your needs and ensure the final result meets your expectations.</p>
+
+                    <section class="section">
+                        <h2 style="margin-top: -1px;">Touch-Up Pricing</h2>
+                        <div class="price-range">
+                            <p><strong>Small Touch-Up (1-2 Hours):</strong> ₹1,000 - ₹2,000</p>
+                            <p><strong>Medium Touch-Up (2-4 Hours):</strong> ₹2,500 - ₹5,000</p>
+                            <p><strong>Large Touch-Up (4+ Hours):</strong> ₹5,500 and up (based on complexity and size)</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="section">
+        <h2 style="margin-top: -40px;">Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img style="height: 50vh; width: 60vh;" src="tattotouchups.webp" alt="Tattoo Touch Up 1">
+                <p>Restored clarity and vibrancy for a previously faded tattoo.</p>
+            </div>
+            <div class="gallery-item">
+                <img style="height: 50vh; width: 60vh;" src="tattotouchups2.jpg" alt="Tattoo Touch Up 2">
+                <p>Enhanced details and colors for a tattoo that needs a refresh.</p>
+            </div>
+            <div class="gallery-item">
+                <img style="height: 50vh; width: 60vh;" src="tattotouchups3.jpg" alt="Tattoo Touch Up 3">
+                <p>Precision touch-ups to bring back original line work and shading.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section"></section>
+        <h2 style="margin-top: -25px;">Rating and Reviews</h2>
+        <div class="rating-reviews">
+            <p><strong>Customer Rating:</strong> ⭐️⭐️⭐️⭐️⭐️ (4.9/5 based on 150 reviews)</p>
+            <h3>Recent Reviews:</h3>
+            <p><strong>Jane D.:</strong> “Absolutely thrilled with my new piercing! The detail is incredible, and the piercer was professional and friendly. Highly recommend!”</p>
+            <p><strong>Mark T.:</strong> “Amazing experience from start to finish. The consultation was thorough, and the final piece exceeded my expectations.”</p>
+            <p><strong>Lisa W.:</strong> “I’ve had several piercings, and this is by far the best. The piercer was a true professional, and the hygiene standards were impeccable.”</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="margin-top: -25px;">Certifications and Experience</h2>
+        <div class="certifications">
+            <div class="certifications-item">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                    <h3>James Miller</h3>
+                    <p>Certified Tattoo Artist with over 10 years of experience in scar cover-up tattoos. Known for precision and creativity in transforming scars into beautiful artwork.</p>
+                </div>
+            </div>
+            <div class="certifications-item">
+                <i class="fas fa-award"></i>
+                <div>
+                    <h3>Jessica Lee</h3>
+                    <p>Award-winning artist specializing in scar cover-up techniques, recognized for her exceptional skills and dedication to client satisfaction.</p>
+                </div>
+            </div>
+            <div class="certifications-item">
+                <i class="fas fa-certificate"></i>
+                <div>
+                    <h3>Certifications:</h3>
+                    <p>Certified Tattoo Artist</p>
+                    <p>Advanced Scar Cover-Up Techniques Certification</p>
+                    <p>Member of the International Tattoo Association</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="margin-top: -25px;">Equipment and Supplies</h2>
+        <div class="equipment-supplies">
+            <div class="equipment-item">
+                <h3>Tattoo Materials and Prices:</h3>
+                <ul>
+                    <li><strong>Basic Scar Cover-Up Session:</strong> ₹3,000 - ₹5,000</li>
+                    <li><strong>Extended Scar Cover-Up Session:</strong> ₹6,000 - ₹10,000</li>
+                    <li><strong>Custom Design Consultation:</strong> ₹1,000 (deductible from the final price)</li>
+                </ul>
+            </div>
+            <div class="equipment-item">
+                <h3>Aftercare Products:</h3>
+                <ul>
+                    <li><strong>Healing Ointment:</strong> ₹400 per jar</li>
+                    <li><strong>Antibacterial Soap:</strong> ₹250 per bottle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section qa">
+        <h2>Frequently Asked Questions</h2>
+        <div class="qa-content">
+            <div class="qa-item">
+                <p class="question">Q1: How often should I get a tattoo touch-up?</p>
+                <p class="answer">A: The need for touch-ups varies based on factors like tattoo placement, skin type, and exposure to the sun. Generally, a touch-up every 2-5 years is recommended to maintain the vibrancy of your tattoo.</p>
+            </div>
+            <div class="qa-item">
+                <p class="question">Q2: How do I prepare for a tattoo touch-up?</p>
+                <p class="answer">A: Ensure the area is clean and moisturized. Avoid sun exposure and avoid any skin treatments that could affect the area prior to your touch-up appointment.</p>
+            </div>
+            <div class="qa-item">
+                <p class="question">Q3: Is the touch-up process painful?</p>
+                <p class="answer">A: Pain levels vary from person to person and depend on the location of the tattoo. Most touch-ups are less painful than the initial tattooing process, but some discomfort is normal.</p>
+            </div>
+            <div class="qa-item">
+                <p class="question">Q4: How long does a touch-up session take?</p>
+                <p class="answer">A: The duration of a touch-up session depends on the size and complexity of the work needed. Sessions typically last between 1 to 4 hours.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="section booking-form">
+        <div class="image-container">
+            <img src="bookappointment.jpg" alt="Book Tattoo Touch Up">
+        </div>
+        <div class="form-container" style="text-align: left;">
+            <h2>Book Your Tattoo Touch-Up</h2>
+            <form id="bookingForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                <span class="error" id="phoneError"></span>
+
+                <label for="tattooLocation">Location of Tattoo:</label>
+                <input type="text" id="tattooLocation" name="tattooLocation" required>
+                <span class="error" id="tattooLocationError"></span>
+
+                <label for="description">Description of Touch-Up Needed:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                <span class="error" id="descriptionError"></span>
+
+                <label for="appointmentDate">Preferred Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+                <span class="error" id="appointmentDateError"></span>
+
+                <button type="submit">Submit Booking Request</button>
+            </form>
+        </div>
+    </section>
+     <!-- Modal -->
+     <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your booking request has been submitted successfully. We will get back to you soon to confirm your appointment.</p>
+        </div>
+    </div>
+
+    <script>
+         document.getElementById('bookingForm').addEventListener('submit', function (event) {
+            let valid = true;
+
+            // Clear previous errors
+            document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+            // Validate Name
+            const name = document.getElementById('name').value;
+            if (name.trim() === '') {
+                document.getElementById('nameError').textContent = 'Full Name is required.';
+                valid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                valid = false;
+            }
+
+            // Validate Phone
+            const phone = document.getElementById('phone').value;
+            if (!/^[0-9]{10}$/.test(phone)) {
+                document.getElementById('phoneError').textContent = 'Please enter a valid 10-digit phone number.';
+                valid = false;
+            }
+
+            // Validate Tattoo Location
+            const tattooLocation = document.getElementById('tattooLocation').value;
+            if (tattooLocation.trim() === '') {
+                document.getElementById('tattooLocationError').textContent = 'Location of tattoo is required.';
+                valid = false;
+            }
+
+            // Validate Description
+            const description = document.getElementById('description').value;
+            if (description.trim() === '') {
+                document.getElementById('descriptionError').textContent = 'Description is required.';
+                valid = false;
+            }
+
+            // Validate Appointment Date
+            const appointmentDate = document.getElementById('appointmentDate').value;
+            if (appointmentDate === '') {
+                document.getElementById('appointmentDateError').textContent = 'Preferred Appointment Date is required.';
+                valid = false;
+            }
+
+            // If form is valid, show modal
+            if (valid) {
+                event.preventDefault();
+                document.getElementById('successModal').style.display = 'block';
+            }
+        });
+
+        // Close modal when clicking on the close button
+        document.querySelector('.modal-close').addEventListener('click', function () {
+            document.getElementById('successModal').style.display = 'none';
+        });
+
+        // Close modal when clicking outside of the modal
+        window.addEventListener('click', function (event) {
+            if (event.target === document.getElementById('successModal')) {
+                document.getElementById('successModal').style.display = 'none';
+            }
+        });
+    </script>
+
+
+<footer class="page-foot">
+    <section class="footer-content bg-darker">
+        <div class="container">
+            <div class="row row-45 text-start">
+                <div class="col-md-6 col-xl-3">
+                    <h3>About Us</h3>
+                    <p class="letter-spacing-30" style="color: #ffffff;">Body Art is a broad and expressive form of art that involves decorating, modifying, or altering the human body.</p>
+                    <address class="offset-top-25">
+          <dl class="dl-horizontal-mod-1 clearfix">
+            <dt><i class="bi bi-telephone-fill" style="color: #ffffff;"></i></dt>
+            <dd><a class="link-white" href="tel:#">+040- 856-789-78</a></dd>
+          </dl>
+          <dl class="dl-horizontal-mod-1 clearfix">
+            <dt><i class="bi bi-envelope-fill" style="color: #ffffff;"></i></dt>
+            <dd><a class="link-white" href="mailto:#">BodyPoetry@demolink.org</a></dd>
+          </dl>
+          <dl class="dl-horizontal-mod-1 clearfix">
+            <dt><i class="bi bi-geo-alt-fill" style="color: #ffffff;"></i></dt>
+            <dd><a class="link-white" >Madhapur <br> Hyderabad, Telangana</a></dd>
+          </dl>
+        </address>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <h3>Gallery</h3>
+                    <!-- RD Flickr-->
+                    <div class="flickr" data-lightgallery="group">
+                        <div class="flickr-item"><img src="images/footer-gallery-1-150x150.jpg" alt=""></a></div>
+                        <div class="flickr-item"><img src="images/footer-gallery-2-150x150.jpg" alt=""></a></div>
+                        <div class="flickr-item"><img src="images/footer-gallery-3-150x150.jpg" alt=""></a></div>
+                        <div class="flickr-item"><img src="images/footer-gallery-4-150x150.jpg" alt=""></a></div>
+                        <div class="flickr-item"><img src="images/footer-gallery-5-150x150.jpg" alt=""></a></div>
+                        <div class="flickr-item"><img src="images/footer-gallery-6-150x150.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <h3>Opening Hours</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Monday :</dt>
+                                <dd class="text-white">8 am-10 pm</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Tuesday :</dt>
+                                <dd class="text-white">8 am-10 pm</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Wednesday :</dt>
+                                <dd class="text-white">8 am-10 pm</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Thursday :</dt>
+                                <dd class="text-white">8 am-10 pm</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Friday:</dt>
+                                <dd class="text-white">8 am-10 pm</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Saturday:</dt>
+                                <dd class="text-white">8 am-10 pm</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                                <dt>Sunday :</dt>
+                                <dd class="text-white">Closed</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-2">
+                    <h3>Useful Links</h3>
+                    <ul class="list-marked-variant-1">
+                        <li><a class="link-base" href="index.html">Home</a></li>
+                        <li><a class="link-base" href="about.html">About</a></li>
+                        <li><a class="link-base" href="service.html">Services</a></li>
+                        <li><a class="link-base" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="link-base" href="blog.html">Blog</a></li>
+                        <li><a class="link-base" href="contact.html">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright bg-darkest">
+        <div class="container">
+            <div class="row row-10 justify-content-md-between align-items-md-center">
+                <div class="col-md-6 col-lg-4 text-md-start">
+                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year" style="color: #ffffff;"></span><span>&nbsp;</span><span style="color: #ffffff;">BodyPoetry</span><span>.&nbsp;</span><a class="link-base" href=".html" style="color: #ffffff;">Privacy Policy</a></p>
+                </div>
+                <div class="col-md-6 col-lg-6 text-md-end"><span class="text-white fst-italic">Follow Us:</span>
+                    <ul class="list-inline">
+                        <a href="https://www.facebook.com/login/"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/i/flow/login"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-twitter"></i></a>
+                        <a href="https://myaccount.google.com/?nlr=1"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-google"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-instagram"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</div>
+<!-- Global Mailform Output-->
+<div class="snackbars" id="form-output-global"></div>
+<!-- Java script-->
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+
+<!--LIVEDEMO_00 -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7078796-5']);
+_gaq.push(['_trackPageview']);
+(function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+(function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
+</script>
+
+</body>
+
+</html>

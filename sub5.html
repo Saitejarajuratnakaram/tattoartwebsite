@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Permanent Makeup Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Body Art</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700%7CLibre+Baskerville:400,400italic,700%7CCourgette">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+    <style>
+       /* Style for the Customization button */
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"] {
+    background-color: #ec6c04; /* Change color as needed */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"]:hover {
+    background-color: #ec6c04; /* Hover color */
+}
+
+    </style>
+    <style>
+      body {
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #000000;
+        overflow-x: hidden;
+        /* Prevents horizontal scrolling */
+      }
+
+      header {
+        background: #000;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .image-section {
+        order: 2;
+        /* This will move the image to the right */
+        flex: 1;
+        padding-left: 20px;
+        /* Adjusts spacing on the left */
+      }
+
+      .image-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        /* Optional: adds rounded corners */
+      }
+
+      h1,
+      h2 {
+        color: #0c0000;
+      }
+
+      .price-range,
+      .gallery-item,
+      .rating-reviews,
+      .certifications,
+      .equipment-supplies,
+      .qa {
+        /* background: #f4f4f4; */
+        padding: 1rem;
+        border-radius: 5px;
+      }
+
+      .price-range {
+        margin-bottom: 2rem;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .gallery-item {
+        flex: 1 1 calc(33% - 1rem);
+        box-sizing: border-box;
+        padding: 1rem;
+        border: 1px solid #080808;
+        border-radius: 5px;
+        background: #f4f4f4;
+      }
+
+      .gallery-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .gallery-item p {
+        margin: 0.5rem 0 0;
+      }
+
+      .rating-reviews p {
+        margin: 0.5rem 0;
+      }
+
+      .certifications {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .certifications-item {
+        flex: 1 1 calc(50% - 1rem);
+        box-sizing: border-box;
+        padding: 1rem;
+        border: 1px solid #0a0a0a;
+        border-radius: 5px;
+        /* background: #f4f4f4; */
+      }
+
+      .certifications-item i {
+        font-size: 2rem;
+        color: #333;
+        margin-right: 0.5rem;
+      }
+
+      .certifications-item h3 {
+        margin: 0;
+      }
+
+      .equipment-supplies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .equipment-item {
+        flex: 1 1 calc(50% - 1rem);
+        box-sizing: border-box;
+        padding: 1rem;
+        border: 1px solid #090909;
+        border-radius: 5px;
+        background: #f4f4f4;
+      }
+
+      .equipment-item h3 {
+        margin: 0;
+      }
+
+      .equipment-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .equipment-item ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .qa h2 {
+        margin-top: 0;
+      }
+
+      .qa .question {
+        font-weight: bold;
+        margin: 0.5rem 0;
+      }
+
+      .qa .answer {
+        margin-bottom: 1rem;
+      }
+
+      .booking-form {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .booking-form .image-container {
+        flex: 1 1 40%;
+        text-align: center;
+      }
+
+      .booking-form .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .booking-form .form-container {
+        flex: 1 1 60%;
+        background: #f4f4f4;
+        padding: 2rem;
+        border-radius: 5px;
+      }
+
+      .booking-form .form-container h2 {
+        margin-top: 0;
+      }
+
+      .booking-form .form-container label {
+        margin: 0.5rem 0 0.2rem;
+      }
+
+      .booking-form .form-container input,
+      .booking-form .form-container textarea,
+      .booking-form .form-container select {
+        padding: 0.5rem;
+        border: 1px solid #090909;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+
+      .booking-form .form-container button {
+        padding: 0.5rem;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .booking-form .form-container button:hover {
+        background: #444;
+      }
+
+      .error {
+        color: red;
+        font-size: 0.875rem;
+        margin: 0.5rem 0;
+      }
+
+      .content-section {
+        order: 1;
+        /* This will keep the text on the left */
+        flex: 1;
+        padding-right: 20px;
+        /* Adjusts spacing on the right */
+      }
+
+      .content-section h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .content-section p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          /* For smaller screens, stack them */
+        }
+
+        .image-section,
+        .content-section {
+          padding: 0;
+          /* Remove padding for mobile layout */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <header>
+      <h1 style="color: #ddd">
+        The Rise of Temporary Tattoos: Trends, Designs, and Benefits
+      </h1>
+    </header> -->
+    <div class="page text-center">
+      <header class="section page-head page-head-default">
+          <!--RD Navbar-->
+          <div class="rd-navbar-wrap" style="background: #2d2d31;">
+              <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+                  data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="117px" data-xxl-stick-up-offset="117px" data-lg-stick-up="true"
+                  data-xl-stick-up="true" data-xxl-stick-up="true">
+                  <div class="rd-navbar-inner">
+                      <div class="rd-navbar-panel">
+                          <!-- RD Navbar Toggle-->
+                          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" type="submit"><span></span></button>
+                          <!-- RD Navbar Brand-->
+                          <div class="rd-navbar-brand"><a class="brand-name" href="index.html">BodyPoetry</a></div>
+                      </div>
+                      <div class="rd-navbar-nav-wrap">
+                          <ul class="rd-navbar-nav">
+                              <li class="rd-nav-item "><a class="rd-nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About </a>
+                              </li>
+                              <li class="rd-nav-item"><a class="rd-nav-link" href="service.html">Services </a>
+                              </li>
+                              <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Portfolio </a>
+                              </li>
+                              <li class="rd-nav-item active"><a class="rd-nav-link" href="blog.html">Blog</a>
+                              </li>
+                              <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact Us</a>
+                              </li>
+                              <li class="rd-nav-item">
+                                  <a class="rd-nav-link" href="customization.html">
+                                      <i class="bi bi-brush"></i> Customization
+                                  </a>
+                              </li>
+                          </ul>
+                         
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </header>
+     <br>
+
+    <div class="container">
+      <section class="section">
+        <div class="container">
+          <div class="image-section">
+            <img
+              style="height: 50vh; width: 60vh; margin-bottom: 300px"
+              src="b5.jpg"
+              alt="Permanent Makeup Service"
+            />
+          </div>
+          <div class="content-section" style="width: 255vh">
+            <br>
+            <h2>
+              The Rise of Temporary Tattoos: Trends, Designs, and Benefits
+            </h2>
+            <p>
+              Temporary tattoos have surged in popularity as a versatile and
+              less permanent alternative to traditional ink. These tattoos offer
+              a way for people to explore their style and express themselves
+              without the long-term commitment associated with permanent
+              tattoos. Trends in temporary tattoos have evolved from simple,
+              single-color designs to intricate, full-color artworks that mimic
+              the look of real tattoos. They can be applied to various body
+              parts, from the arms and legs to more visible areas like the neck
+              and face.
+            </p>
+
+            <p>
+              The benefits of temporary tattoos are numerous. They offer the
+              freedom to change designs frequently without the need for painful
+              removal processes or long-term regret. These tattoos are often
+              created using safe, skin-friendly materials that are easy to apply
+              and remove, making them a popular choice for those who enjoy
+              changing their look. They also provide a risk-free option for
+              people who want to try out a design before committing to a
+              permanent tattoo.
+            </p>
+
+            <section class="section">
+              <h2 style="margin-top: -1px">Price Range</h2>
+              <div class="price-range">
+                <p><strong>Eyebrow Tattoo:</strong> ₹9,000 - ₹12,000</p>
+                <p><strong>Lip Blush:</strong> ₹110,000 - ₹15,000</p>
+                <p><strong>Eyeline Tattoo:</strong> 8,000 - ₹10,000</p>
+                <p><strong>Full Face Package:</strong> ₹25,000 - ₹35,000</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <h2 style="margin-top: -40px">Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            style="height: 50vh; width: 60vh"
+            src="b11.webp"
+            alt="Eyebrow Tattoo Before and After"
+          />
+          <!-- <p>Before and after photos of eyebrow tattoo treatments.</p> -->
+        </div>
+        <div class="gallery-item">
+          <img
+            style="height: 50vh; width: 60vh"
+            src="b3.webp"
+            alt="Lip Blush Enhancement"
+          />
+          <!-- <p>Lip blush enhancement showcasing natural-looking results.</p> -->
+        </div>
+        <div class="gallery-item">
+          <img
+            style="height: 50vh; width: 60vh"
+            src="b8.webp"
+            alt="Eyeliner Tattoo"
+          />
+          <!-- <p>Eyeliner tattoo results for a defined and polished look.</p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin-top: -25px">Rating and Reviews</h2>
+      <div class="rating-reviews">
+        <p>
+          <strong>Customer Rating:</strong> ⭐️⭐️⭐️⭐️⭐️ (4.9/5 based on 150
+          reviews)
+        </p>
+        <h3>Recent Reviews:</h3>
+        <p>
+          <strong>Emma T.:</strong> “My experience with Elite Permanent Makeup
+          Services was fantastic! The technician was professional, and the
+          results exceeded my expectations. I’m thrilled with my new eyebrows!”
+        </p>
+        <p>
+          <strong>James L.:</strong> “The consultation was thorough, and the
+          service was exceptional. My lip blush looks amazing, and I couldn’t be
+          happier with the outcome. Highly recommended!”
+        </p>
+        <p>
+          <strong>Olivia P.:</strong> “I had my eyeliner tattoo done here, and
+          the process was smooth and comfortable. The results are great, and I
+          love the convenience of not having to apply eyeliner every day.”
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin-top: -25px">Certifications and Experience</h2>
+      <div class="certifications">
+        <div class="certifications-item">
+          <i class="fas fa-user-tie"></i>
+          <div>
+            <h3>John</h3>
+            <p>
+              Certified Permanent Makeup Specialist with over 10 years of
+              experience, known for her precision and artistry in creating
+              natural-looking enhancements.
+            </p>
+          </div>
+        </div>
+        <div class="certifications-item">
+          <i class="fas fa-award"></i>
+          <div>
+            <h3>Michael</h3>
+            <p>
+              Award-winning expert in permanent makeup, specializing in eyebrow
+              and lip enhancements with a focus on delivering high-quality
+              results.
+            </p>
+          </div>
+        </div>
+        <div class="certifications-item">
+          <i class="fas fa-certificate"></i>
+          <div>
+            <h3>Certifications:</h3>
+            <p>Certified Permanent Makeup Artist</p>
+            <p>Advanced Pigmentology Certification</p>
+            <p>Member of the International Association of Permanent Makeup</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <h2 style="margin-top: -25px">Customer Questions & Answers</h2>
+      <div class="qa">
+        <div class="qa-item">
+          <p class="question">Q1:How long do temporary tattoos last?</p>
+          <p class="answer">
+            A: Temporary tattoos typically last between 3 to 10 days, depending
+            on factors like the tattoo's design, location on the body, and how
+            well it’s cared for. They gradually fade as you wash and exfoliate
+            the area.
+          </p>
+        </div>
+        <div class="qa-item">
+          <p class="question">
+            Q2: Are temporary tattoos safe for all skin types?
+          </p>
+          <p class="answer">
+            A: Most temporary tattoos use skin-safe, non-toxic materials.
+            However, if you have sensitive skin or allergies, it’s a good idea
+            to test a small area first to ensure there’s no adverse reaction.
+          </p>
+        </div>
+        <div class="qa-item">
+          <p class="question">Q3: How do you apply a temporary tattoo?</p>
+          <p class="answer">
+            A: To apply a temporary tattoo, clean and dry the area of skin where
+            you want to place it. Remove the clear protective layer from the
+            tattoo, press it firmly onto the skin, and then wet the back with a
+            damp cloth for 30 seconds. Gently peel off the backing paper and let
+            the tattoo dry.
+          </p>
+        </div>
+        <div class="qa-item">
+          <p class="question">
+            Q4: Can you remove a temporary tattoo before it fades?
+          </p>
+          <p class="answer">
+            Yes, you can remove a temporary tattoo before it fades by using
+            products like rubbing alcohol, baby oil, or specialized tattoo
+            removal wipes. Gently rub the area until the tattoo is completely
+            removed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <script>
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          let valid = true;
+
+          // Clear previous errors
+          document
+            .querySelectorAll(".error")
+            .forEach((error) => (error.textContent = ""));
+
+          // Validate Name
+          const name = document.getElementById("name").value;
+          if (name.trim() === "") {
+            document.getElementById("nameError").textContent =
+              "Full Name is required.";
+            valid = false;
+          }
+
+          // Validate Email
+          const email = document.getElementById("email").value;
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+            document.getElementById("emailError").textContent =
+              "Please enter a valid email address.";
+            valid = false;
+          }
+
+          // Validate Phone
+          const phone = document.getElementById("phone").value;
+          if (!/^[0-9]{10}$/.test(phone)) {
+            document.getElementById("phoneError").textContent =
+              "Please enter a valid 10-digit phone number.";
+            valid = false;
+          }
+
+          // Validate Permanent Makeup Details
+          const permanentMakeupDetails = document.getElementById(
+            "permanentMakeupDetails"
+          ).value;
+          if (permanentMakeupDetails.trim() === "") {
+            document.getElementById("permanentMakeupDetailsError").textContent =
+              "Permanent Makeup Details are required.";
+            valid = false;
+          }
+
+          // Validate Appointment Date
+          const appointmentDate =
+            document.getElementById("appointmentDate").value;
+          if (appointmentDate === "") {
+            document.getElementById("appointmentDateError").textContent =
+              "Preferred Appointment Date is required.";
+            valid = false;
+          }
+
+          // If form is not valid, prevent submission
+          if (!valid) {
+            event.preventDefault();
+          }
+        });
+    </script>
+
+    <footer class="page-foot">
+  <section class="footer-content bg-darker">
+      <div class="container">
+          <div class="row row-45 text-start">
+              <div class="col-md-6 col-xl-3">
+                  <h3>About Us</h3>
+                  <p class="letter-spacing-30" style="color: #ffffff;">Body Art is a broad and expressive form of art that involves decorating, modifying, or altering the human body.</p>
+                  <address class="offset-top-25">
+        <dl class="dl-horizontal-mod-1 clearfix">
+          <dt><i class="bi bi-telephone-fill"  style="color: #ffffff;"></i></dt>
+          <dd><a class="link-white" href="tel:#">+040- 856-789-78</a></dd>
+        </dl>
+        <dl class="dl-horizontal-mod-1 clearfix">
+          <dt><i class="bi bi-envelope-fill"  style="color: #ffffff;"></i></dt>
+          <dd><a class="link-white" href="mailto:#">BodyPoetry@demolink.org</a></dd>
+        </dl>
+        <dl class="dl-horizontal-mod-1 clearfix">
+          <dt><i class="bi bi-geo-alt-fill"  style="color: #ffffff;"></i></dt>
+          <dd><a class="link-white" href="#">Madhapur <br> Hyderabad, Telangana</a></dd>
+        </dl>
+      </address>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                  <h3>Gallery</h3>
+                  <!-- RD Flickr-->
+                  <div class="flickr" data-lightgallery="group">
+                      <div class="flickr-item"><img src="images/footer-gallery-1-150x150.jpg" alt=""></a></div>
+                      <div class="flickr-item"><img src="images/footer-gallery-2-150x150.jpg" alt=""></a></div>
+                      <div class="flickr-item"><img src="images/footer-gallery-3-150x150.jpg" alt=""></a></div>
+                      <div class="flickr-item"><img src="images/footer-gallery-4-150x150.jpg" alt=""></a></div>
+                      <div class="flickr-item"><img src="images/footer-gallery-5-150x150.jpg" alt=""></a></div>
+                      <div class="flickr-item"><img src="images/footer-gallery-6-150x150.jpg" alt=""></a></div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                  <h3>Opening Hours</h3>
+                  <ul class="list-unstyled">
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Monday:</dt>
+                              <dd class="text-white">8 am-10 pm</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Tuesday:</dt>
+                              <dd class="text-white">8 am-10 pm</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Wednesday:</dt>
+                              <dd class="text-white">8 am-10 pm</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Thursday:</dt>
+                              <dd class="text-white">8 am-10 pm</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Friday:</dt>
+                              <dd class="text-white">8 am-10 pm</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Saturday:</dt>
+                              <dd class="text-white">8 am-10 pm</dd>
+                          </dl>
+                      </li>
+                      <li>
+                          <dl class="dl-horizontal-mod-2" style="color: #ffffff;">
+                              <dt>Sunday:</dt>
+                              <dd class="text-white">Closed</dd>
+                          </dl>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-6 col-xl-2" >
+                  <h3>Useful Links</h3>
+                  <ul class="list-marked-variant-1" >
+                      <li><a class="link-base" href="index.html">Home</a></li>
+                      <li><a class="link-base" href="about.html">About</a></li>
+                      <li><a class="link-base" href="service.html">Services</a></li>
+                      <li><a class="link-base" href="portfolio.html">Portfolio</a></li>
+                      <li><a class="link-base" href="blog.html">Blog</a></li>
+                      <li><a class="link-base" href="contact.html">Contact Us</a></li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="copyright bg-darkest">
+      <div class="container">
+          <div class="row row-10 justify-content-md-between align-items-md-center">
+              <div class="col-md-6 col-lg-4 text-md-start" style="color: #ffffff;">
+                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>BodyPoetry</span><span>.&nbsp;</span><a class="link-base" href=".html">Privacy Policy</a></p>
+              </div>
+              <div class="col-md-6 col-lg-6 text-md-end"><span class="text-white fst-italic">Follow Us:</span>
+                  <ul class="list-inline">
+                      <a href="https://www.facebook.com/login/"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-facebook"></i></a>
+                      <a href="https://x.com/i/flow/login"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-twitter"></i></a>
+                      <a href="https://myaccount.google.com/?nlr=1"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-google"></i></a>
+                      <a href="https://www.instagram.com/accounts/login/?hl=en"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-instagram"></i></a>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+</footer>
+</div>
+<!-- Global Mailform Output-->
+<div class="snackbars" id="form-output-global"></div>
+<!-- Java script-->
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+
+<!--LIVEDEMO_00 -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7078796-5']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+(function(w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
+</script>
+  </body>
+</html>
