@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+
+    <title>Body Art Design Customization</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700%7CLibre+Baskerville:400,400italic,700%7CCourgette">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- lightbox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/stylep.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        /* Style for the Customization button */
+        .rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"] {
+            background-color: #ec6c04;
+            /* Change color as needed */
+            color: white;
+            border-radius: 5px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"]:hover {
+            background-color: #ec6c04;
+            /* Hover color */
+        }
+
+
+        /* General body styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e0e0e0;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container1 {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading styles */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Label styles */
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        /* Input, range, color picker styles */
+        input[type="file"],
+        select,
+        input[type="range"],
+        input[type="color"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="file"]:focus,
+        select:focus,
+        input[type="range"]:focus,
+        input[type="color"]:focus {
+            border-color: #007bff;
+        }
+
+        /* Styling for the canvas container */
+        .canvas-section {
+            margin-top: 30px;
+            text-align: center;
+            background-color: #fafafa;
+            padding-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            /* Adjust this value if needed */
+            width: 100%;
+            /* Adjust this value if needed */
+        }
+
+        canvas {
+            border: 2px solid #ddd;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            width: 4000px;
+            /* Set the desired width for the canvas */
+            height: 300px;
+            /* Set the desired height for the canvas */
+            border-radius: 6px;
+        }
+
+        /* Button styles */
+        button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 24px;
+            padding-bottom: 10px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            canvas {
+                width: 100%;
+                /* Adjust width for smaller screens */
+                height: auto;
+                /* Maintain aspect ratio for smaller screens */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="hero_area">
+
+        <!-- header section strats -->
+        <header class="section page-head page-head-default">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap bg-transparent">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                    data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed"
+                    data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-static"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static"
+                    data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static"
+                    data-lg-stick-up-offset="46px" data-xl-stick-up-offset="117px" data-xxl-stick-up-offset="117px"
+                    data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                                type="submit"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand-name" href="index.html">BodyPoetry</a></div>
+                        </div>
+                        <div class="rd-navbar-nav-wrap">
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="service.html">Services </a>
+                                </li>
+                                <li class="rd-nav-item "><a class="rd-nav-link" href="portfolio.html">Portfolio </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link active" href="customization.html">
+                                        <i class="bi bi-brush"></i> Customization
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="container1" style="margin-top: 100px;">
+            <h1>Design Customization Tool</h1>
+            <div class="upload-section">
+                <label for="upload-image">Upload Body Image:</label>
+                <input type="file" id="upload-image" accept="image/*">
+            </div>
+
+            <div class="customization-section">
+                <label for="size-range">Resize Image (Scale %):</label>
+                <input type="range" id="size-range" min="50" max="200" value="100">
+
+                <label for="rotation-range">Rotate Image (Degrees):</label>
+                <input type="range" id="rotation-range" min="0" max="360" value="0">
+
+                <label for="brightness-range">Adjust Brightness:</label>
+                <input type="range" id="brightness-range" min="50" max="150" value="100">
+
+                <label for="contrast-range">Adjust Contrast:</label>
+                <input type="range" id="contrast-range" min="50" max="150" value="100">
+
+                <label for="saturation-range">Adjust Saturation:</label>
+                <input type="range" id="saturation-range" min="50" max="150" value="100">
+
+                <label for="blur-range">Apply Blur Effect:</label>
+                <input type="range" id="blur-range" min="0" max="10" value="0">
+
+                <label for="color-filter">Apply Color Filter:</label>
+                <input type="color" id="color-filter" value="#ffffff">
+
+                <label for="flip-option">Flip Image:</label>
+                <select id="flip-option">
+                    <option value="none">None</option>
+                    <option value="horizontal">Flip Horizontal</option>
+                    <option value="vertical">Flip Vertical</option>
+                </select>
+            </div>
+
+            <div class="canvas-section">
+                <h2>Preview</h2>
+                <canvas id="preview-canvas"></canvas>
+                <br>
+                <button id="reset-button">Reset</button>
+                <button id="download-button">Download Image</button>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <footer class="page-foot">
+            <section class="footer-content bg-darker">
+                <div class="container">
+                    <div class="row row-45 text-start">
+                        <div class="col-md-6 col-xl-3">
+                            <h3>About Us</h3>
+                            <p class="letter-spacing-30" style="color: #9b9b9b;">Body Art is a broad and expressive form
+                                of art that involves decorating, modifying, or altering the human body.</p>
+                            <address class="offset-top-25">
+                                <dl class="dl-horizontal-mod-1 clearfix">
+                                    <dt><i class="bi bi-telephone-fill" style="color: #9b9b9b;"></i></dt>
+                                    <dd><a class="link-white" href="tel:#">+040- 856-789-78</a></dd>
+                                </dl>
+                                <dl class="dl-horizontal-mod-1 clearfix">
+                                    <dt><i class="bi bi-envelope-fill" style="color: #9b9b9b;"></i></dt>
+                                    <dd><a class="link-white" href="mailto:#">BodyPoetry@demolink.org</a></dd>
+                                </dl>
+                                <dl class="dl-horizontal-mod-1 clearfix">
+                                    <dt><i class="bi bi-geo-alt-fill" style="color: #9b9b9b;"></i></dt>
+                                    <dd><a class="link-white">Madhapur <br> Hyderabad, Telangana</a></dd>
+                                </dl>
+                            </address>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <h3>Gallery</h3>
+                            <!-- RD Flickr-->
+                            <div class="flickr" data-lightgallery="group">
+                                <div class="flickr-item"><img src="images/footer-gallery-1-150x150.jpg" alt=""></a>
+                                </div>
+                                <div class="flickr-item"><img src="images/footer-gallery-2-150x150.jpg" alt=""></a>
+                                </div>
+                                <div class="flickr-item"><img src="images/footer-gallery-3-150x150.jpg" alt=""></a>
+                                </div>
+                                <div class="flickr-item"><img src="images/footer-gallery-4-150x150.jpg" alt=""></a>
+                                </div>
+                                <div class="flickr-item"><img src="images/footer-gallery-5-150x150.jpg" alt=""></a>
+                                </div>
+                                <div class="flickr-item"><img src="images/footer-gallery-6-150x150.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <h3>Opening Hours</h3>
+                            <ul class="list-unstyled" style="color: #9b9b9b;">
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Monday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Tuesday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Wednesday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Thursday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Friday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Saturday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Sunday:</dt>
+                                        <dd class="text-white">Closed</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <h3>Useful Links</h3>
+                            <ul class="list-marked-variant-1">
+                                <li><a class="link-base" href="index.html">Home</a></li>
+                                <li><a class="link-base" href="about.html">About</a></li>
+                                <li><a class="link-base" href="service.html">Services</a></li>
+                                <li><a class="link-base" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="link-base" href="blog.html">Blog</a></li>
+                                <li><a class="link-base" href="contact.html">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="copyright bg-darkest">
+                <div class="container">
+                    <div class="row row-10 justify-content-md-between align-items-md-center">
+                        <div class="col-md-6 col-lg-4 text-md-start" style="color: #9b9b9b;">
+                            <p class="rights"><span>&copy;&nbsp;</span><span
+                                    class="copyright-year"></span><span>&nbsp;</span><span>BodyPoetry</span><span>.&nbsp;</span><a
+                                    class="link-base" href=".html">Privacy Policy</a></p>
+                        </div>
+                        <div class="col-md-6 col-lg-6 text-md-end"><span class="text-white fst-italic">Follow Us:</span>
+                            <ul class="list-inline">
+                                <a href="https://www.facebook.com/login/" style="    margin: 5px; color: #ec6c04;"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/i/flow/login" style="    margin: 5px; color: #ec6c04;"><i
+                                        class="bi bi-twitter"></i></a>
+                                <a href="https://myaccount.google.com/?nlr=1"
+                                    style="    margin: 5px; color: #ec6c04;"><i class="bi bi-google"></i></a>
+                                <a href="https://www.instagram.com/accounts/login/?hl=en"
+                                    style="    margin: 5px; color: #ec6c04;"><i class="bi bi-instagram"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- footer section -->
+
+        <!-- jQery -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <!-- popper js -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+            </script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.js"></script>
+        <!-- owl slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+        </script>
+        <!-- lightbox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js  "></script>
+        <!-- custom js -->
+        <script src="js/custom.js"></script>
+        <!-- Google Map -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+            </script>
+        <!-- End Google Map -->
+        <!-- Java script-->
+        <script src="js/core.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+        <script>
+            const uploadImage = document.getElementById('upload-image');
+            const sizeRange = document.getElementById('size-range');
+            const rotationRange = document.getElementById('rotation-range');
+            const brightnessRange = document.getElementById('brightness-range');
+            const contrastRange = document.getElementById('contrast-range');
+            const saturationRange = document.getElementById('saturation-range');
+            const blurRange = document.getElementById('blur-range');
+            const colorFilter = document.getElementById('color-filter');
+            const flipOption = document.getElementById('flip-option');
+            const resetButton = document.getElementById('reset-button');
+            const downloadButton = document.getElementById('download-button');
+            const canvas = document.getElementById('preview-canvas');
+            const ctx = canvas.getContext('2d');
+
+            let bodyImage = null;
+
+            // Load uploaded body image and draw on canvas
+            uploadImage.addEventListener('change', function (event) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    bodyImage = new Image();
+                    bodyImage.src = e.target.result;
+                    bodyImage.onload = function () {
+                        drawCanvas();
+                    };
+                };
+                reader.readAsDataURL(event.target.files[0]);
+            });
+
+            // Draw canvas with the applied transformations
+            function drawCanvas() {
+                if (!bodyImage) return;
+
+                // Clear the canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Set canvas dimensions to match the uploaded image dimensions
+                canvas.width = bodyImage.width;
+                canvas.height = bodyImage.height;
+
+                // Apply transformations
+                const size = sizeRange.value / 100;
+                const rotation = rotationRange.value;
+                const brightness = brightnessRange.value / 100;
+                const contrast = contrastRange.value / 100;
+                const saturation = saturationRange.value / 100;
+                const blur = blurRange.value;
+                const flip = flipOption.value;
+
+                // Set filters: brightness, contrast, saturation, blur, and color filter
+                ctx.filter = `brightness(${brightness}) contrast(${contrast}) saturate(${saturation}) blur(${blur}px) drop-shadow(0 0 10px ${colorFilter.value})`;
+
+                // Apply flip transformation
+                ctx.save();
+                if (flip === "horizontal") {
+                    ctx.scale(-1, 1);
+                    ctx.translate(-canvas.width, 0);
+                } else if (flip === "vertical") {
+                    ctx.scale(1, -1);
+                    ctx.translate(0, -canvas.height);
+                }
+
+                // Apply rotation and scaling transformations
+                ctx.translate(canvas.width / 2, canvas.height / 2);
+                ctx.rotate(rotation * Math.PI / 180);
+                ctx.scale(size, size);
+                ctx.drawImage(bodyImage, -bodyImage.width / 2, -bodyImage.height / 2);
+                ctx.restore();
+            }
+
+            // Update the canvas whenever the user changes the customization options
+            sizeRange.addEventListener('input', drawCanvas);
+            rotationRange.addEventListener('input', drawCanvas);
+            brightnessRange.addEventListener('input', drawCanvas);
+            contrastRange.addEventListener('input', drawCanvas);
+            saturationRange.addEventListener('input', drawCanvas);
+            blurRange.addEventListener('input', drawCanvas);
+            colorFilter.addEventListener('input', drawCanvas);
+            flipOption.addEventListener('change', drawCanvas);
+
+            // Reset button functionality
+            resetButton.addEventListener('click', function () {
+                sizeRange.value = 100;
+                rotationRange.value = 0;
+                brightnessRange.value = 100;
+                contrastRange.value = 100;
+                saturationRange.value = 100;
+                blurRange.value = 0;
+                colorFilter.value = '#ffffff';
+                flipOption.value = 'none';
+                drawCanvas();
+            });
+
+            // Download button functionality
+            downloadButton.addEventListener('click', function () {
+                const dataURL = canvas.toDataURL('image/png');
+                const link = document.createElement('a');
+                link.href = dataURL;
+                link.download = 'customized-image.png';
+                link.click();
+            });
+        </script>
+
+        <!--LIVEDEMO_00 -->
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-7078796-5']);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0"
+                width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const imgBox = document.querySelector('.img-box');
+                const img = imgBox.querySelector('img');
+
+                imgBox.addEventListener('mousemove', function (event) {
+                    const rect = imgBox.getBoundingClientRect();
+                    const x = event.clientX - rect.left; // Calculate X position within the image box
+                    const y = event.clientY - rect.top;  // Calculate Y position within the image box
+                    const percentX = x / rect.width;     // Calculate percentage X
+                    const percentY = y / rect.height;    // Calculate percentage Y
+
+                    // Move the image according to the cursor position
+                    img.style.transformOrigin = `${percentX * 100}% ${percentY * 100}%`;
+                    img.style.transform = 'scale(1.2)'; // Zoom in by 20%
+                });
+
+                imgBox.addEventListener('mouseleave', function () {
+                    // Reset the zoom and position when the cursor leaves
+                    img.style.transform = 'scale(1)';
+                    img.style.transformOrigin = 'center center';
+                });
+            });
+        </script>
+        <!-- End Google Tag Manager -->
+        <script>
+            // Function to toggle zoom on click
+            document.querySelector('.img-box').addEventListener('click', function () {
+                const img = this.querySelector('img');
+                if (img.style.transform === 'scale(1.2)') {
+                    img.style.transform = 'scale(1)'; // Reset zoom
+                } else {
+                    img.style.transform = 'scale(1.8)'; // Zoom in
+                }
+            });
+        </script>
+
+</body>
+
+</html>
