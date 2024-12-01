@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Body Art</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700%7CLibre+Baskerville:400,400italic,700%7CCourgette">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+       /* Style for the Customization button */
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"] {
+    background-color: #ec6c04; /* Change color as needed */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"]:hover {
+    background-color: #ec6c04; /* Hover color */
+}
+
+   
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            color: #b2925a;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        section {
+            width: 90%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+
+        /* Counters */
+        .counters-section {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .counter {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .counter-desc {
+        font-size: 1.2rem;
+    }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #fff;
+            padding: 3em;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-item {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .testimonial-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+
+        .testimonial-item p {
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            text-align: center;
+            margin-top: 3em;
+        }
+
+        .newsletter-section input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 2px solid #b2925a;
+        }
+
+        .newsletter-section button {
+            padding: 10px 20px;
+            background-color: #b2925a;
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Container styles */
+        .container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+
+        /* Filter buttons styling */
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .filter-button:hover {
+            background-color: #555;
+        }
+
+        /* Gallery grid styling */
+        .gallery1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+        }
+
+        /* Gallery item styling */
+        .gallery-item1 {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Hover effect on gallery item */
+        .gallery-item1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Image styling with uniform size */
+        .gallery-item1 img {
+            width: 100%;
+            height: 200px;
+            /* Fixed height */
+            object-fit: cover;
+            /* Ensures the image covers the area while maintaining aspect ratio */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            /* Add transition for scaling effect */
+        }
+
+        /* Hover effect on image */
+        .gallery-item1:hover img {
+            transform: scale(1.05);
+            /* Slight zoom on hover */
+        }
+
+        /* Image caption styling */
+        .gallery-item1 p {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 999;
+        }
+
+        .popup p {
+            margin: 0 0 15px;
+        }
+
+        .popup button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about-artist,
+        .featured-projects,
+        .contact-form {
+            background-color: #fff;
+            padding: 2em;
+            margin: 2em 0;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+        }
+
+        .about-artist img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1em;
+        }
+
+        .about-artist p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+
+        .featured-projects {
+            text-align: center;
+        }
+
+        .featured-projects .project {
+            margin-bottom: 1.5em;
+        }
+
+        .featured-projects .project img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-projects h3 {
+            margin: 1em 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: 2px solid #b2925a;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #b2925a;
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+        /* Responsive Design: Adjusts for smaller screens */
+        @media screen and (max-width: 768px) {
+            .gallery1 {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery1 {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+
+            .gallery-grid,
+            .portfolio-details {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .counters-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .gallery-grid,
+            .portfolio-details {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .counters-section {
+                flex-direction: column;
+            }
+
+            .counters-section .counter {
+                font-size: 2em;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page text-center">
+        <header class="section page-head page-head-default">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap" style="background: #2d2d31;">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="117px" data-xxl-stick-up-offset="117px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" type="submit"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand-name" href="index.html">BodyPoetry</a></div>
+                        </div>
+                        <div class="rd-navbar-nav-wrap">
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item "><a class="rd-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="service.html">Services </a>
+                                </li>
+                                <li class="rd-nav-item active"><a class="rd-nav-link" href="portfolio.html">Portfolio </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="customization.html">
+                                        <i class="bi bi-brush"></i> Customization
+                                    </a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+       <br>
+       <br>
+       <br>
+       <br>
+  <!-- Main Portfolio Gallery -->
+  <section class="portfolio-section">
+    <h1> Gallery</h1>
+
+
+    <div class="gallery-grid">
+        <!-- Add more gallery items as needed -->
+        <div class="gallery-item">
+             <img src="tattoportfolio1.jpg" alt="Tattoo Art 1">
+        </div>
+        <div class="gallery-item">
+     <img src="tattoportfolio2.jpg" alt="Tattoo Art 2">
+        </div>
+        <div class="gallery-item">
+         <img src="tattoportfolio3.jpeg" alt="Tattoo Art 3">
+        </div>
+        <div class="gallery-item">
+            <img src="tattoportfolio4.jpg" alt="Tattoo Art 4">
+        </div>
+        <div class="gallery-item">
+        <img src="tattoportfolio5.jpg" alt="Tattoo Art 5">
+        </div>
+        <div class="gallery-item">
+            <img src="tattoportfolio6.avif" alt="Tattoo Art 6">
+        </div>
+        <div class="gallery-item">
+            <img src="tattoportfolio9.jpg" alt="Tattoo Art 7">
+        </div>
+        <div class="gallery-item">
+            <img src="tattoportfolio7.png" alt="Tattoo Art 8">
+        </div>
+        <div class="gallery-item">
+             <img src="tattoportfolio8.jpg" alt="Tattoo Art 9">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</section>
+
+
+
+<!-- Counters Section -->
+<section class="counters-section">
+<div>
+    <div class="counter" data-target="5000" style="color: #b2925a;">0</div>
+    <div class="counter-desc" style="color: #b2925a;">Happy Clients</div>
+</div>
+<div>
+    <div class="counter" data-target="150" style="color: #b2925a;">0</div>
+    <div class="counter-desc" style="color: #b2925a;">Successful Workshops</div>
+</div>
+<div>
+    <div class="counter " data-target="100" style="color: #b2925a;">0%</div>
+    <div class="counter-desc" style="color: #b2925a;">Premium Quality Ink</div>
+</div>
+</section>
+
+
+<div class="container1">
+    <h1>My Work Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-button" data-category="all">All</button>
+        <button class="filter-button" data-category="tattooing">Tattooing</button>
+        <button class="filter-button" data-category="piercing">Piercing</button>
+        <button class="filter-button" data-category="microblading">Microblading</button>
+        <button class="filter-button" data-category="tattoo-removal">Tattoo Removal</button>
+        <button class="filter-button" data-category="henna">Henna</button>
+        <button class="filter-button" data-category="bodypainting">Bodypainting</button>
+        <button class="filter-button" data-category="tattoo-touchups">Tattoo Touch-ups</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery1">
+
+        <!-- Tattooing (9 images) -->
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="taditional.html"> <img src="oldschool2.jpg" alt="Tattoo 1">
+            <p >Traditional Tattoos (Old School)
+                   </p>
+        </a>
+        
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="realism.html"> <img src="Realism Tattoos.webp" alt="Tattoo 2">
+            <p>Realism Tattoos
+                   </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="watercolor.html"> <img src="Watercolor Tattoos.png" alt="Tattoo 3">
+            <p>Watercolor Tattoos       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="tribal.html"> <img src="Tribal Tattoos.webp" alt="Tattoo 4">
+            <p>Tribal Tattoos
+                   </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="japanese.html"> <img src="Japanese Tattoos (Irezumi).jpg" alt="Tattoo 5">
+            <p>Japanese Tattoos (Irezumi)       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="blackwork.html"> <img src="Blackwork Tattoos.jpg" alt="Tattoo 6">
+            <p>Blackwork Tattoos       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="dotwork.html"> <img src="Dotwork Tattoos.avif" alt="Tattoo 7">
+            <p>Dotwork Tattoos       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="biomechanical.html"> <img src="Biomechanical Tattoos.avif" alt="Tattoo 8">
+            <p>Biomechanical Tattoos       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattooing">
+            <a href="script.html"> <img src="Script Tattoos.jpeg" alt="Tattoo 9">
+            <p>Script Tattoos       </p>
+        </a>
+        </div>
+
+        <!-- Piercing (9 images) -->
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing1.html"> <img src="Lobe Piercing.jpg" alt="Piercing 1">
+            <p>Lobe Piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing2.html"> <img src="Helix Piercing.jpg" alt="Piercing 2">
+            <p>Helix Piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing3.html"> <img src="Tragus Piercing.avif" alt="Piercing 3">
+            <p>Tragus Piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing4.html"> <img src="Conch Piercing.jpeg" alt="Piercing 4">
+            <p>Conch Piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing5.html"> <img src="Industrial piercing.jpg" alt="Piercing 5">
+            <p>Industrial piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing6.html"> <img src="Daith Piercing.jpg" alt="Piercing 6">
+            <p>Daith Piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing7.html"> <img src="Rook piercing.avif" alt="Piercing 7">
+            <p>Rook piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing8.html"> <img src="nose piercing.jpg" alt="Piercing 8">
+            <p>Nose  piercing       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="piercing">
+            <a href="piercing9.html"> <img src="Eyebrow piercing.jpg" alt="Piercing 9">
+            <p>Eyebrow piercing       </p>
+        </a>
+        </div>
+
+        <!-- Microblading (9 images) -->
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding1.html"> <img src="Hair StrokeFeather Stroke Microblading.png" alt="Microblading 1">
+            <p>Hair Stroke/Feather Stroke Microblading       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding2.html"> <img src="Combo Brows.jpg" alt="Microblading 2">
+            <p>Combo Brows       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding3.html"> <img src="Nanoblading.jpg" alt="Microblading 3">
+            <p>Nanoblading       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding4.html"> <img src="Hybrid Brows.jpg" alt="Microblading 4">
+            <p>Hybrid Brows       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding5.html"> <img src="Blade and Shade.webp" alt="Microblading 5">
+            <p>Blade and Shade       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding6.html"> <img src="3D Eyebrows.webp" alt="Microblading 6">
+            <p>3D Eyebrows       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding7.html"> <img src="Wet Microblading.jpg" alt="Microblading 7">
+            <p>Wet Microblading       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding8.html"> <img src="OmbrePowder Brows.jpeg" alt="Microblading 8">
+            <p>Ombre/Powder Brows       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="microblading">
+            <a href="microbleding9.html"> <img src="Bold Brows.jpg" alt="Microblading 9">
+            <p>Bold Brows       </p>
+        </a>
+        </div>
+
+        <!-- Tattoo Removal (9 images) -->
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal1.html"> <img src="Laser Removal.jpg" alt="Tattoo Removal 1">
+            <p>Laser Removal       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal2.html"> <img src="Surgical Excision.jpg" alt="Tattoo Removal 2">
+            <p>Surgical Excision       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal3.html"> <img src="Dermabrasion.webp" alt="Tattoo Removal 3">
+            <p>Dermabrasion Removal       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal4.html"> <img src="Chemical Peels.jpg" alt="Tattoo Removal 4">
+            <p>Chemical Peels Tattoo Removal        </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal5.html"> <img src="Tattoo Removal Creams.jpg" alt="Tattoo Removal 5">
+            <p>Tattoo Removal Creams</p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal6.html"> <img src="Saline Tattoo Removal.jpg" alt="Tattoo Removal 6">
+            <p>Saline  Tattoo Removal        </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal7.html"> <img src="Intense Pulsed Light (IPL).jpeg" alt="Tattoo Removal 7">
+            <p>Intense Pulsed Light (IPL)       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal8.html"> <img src="Cryosurgery.jpg" alt="Tattoo Removal 8">
+            <p>Cryosurgery       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-removal">
+            <a href="./removal9.html"> <img src="Microneedling with Radiofrequency.webp" alt="Tattoo Removal 9">
+            <p>Microneedling with Radiofrequency Tattoo Removal        </p>
+        </a>
+        </div>
+
+        <!-- Henna (9 images) -->
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna1.html"> <img src="Traditional Mehndi.jpg" alt="Henna 1">
+            <p>Traditional Mehndi       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna2.html"> <img src="Arabic Henna.jpg" alt="Henna 2">
+            <p>Arabic Henna       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna3.html"> <img src="Indian Henna.webp" alt="Henna 3">
+            <p>Indian Henna       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna4.html"> <img src="Pakistani Henna.avif" alt="Henna 4">
+            <p>Pakistani Henna       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna5.html"> <img src="Moroccan Henna.avif" alt="Henna 5">
+            <p> Moroccan Henna       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna6.html"> <img src="Somali Henna.jpg" alt="Henna 6">
+            <p>Somali Henna       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna7.html"> <img src="WesternContemporary Henna.jpg" alt="Henna 7">
+            <p>Western/Contemporary Henna       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna8.html"> <img src="Temporary Henna Tattoos.avif" alt="Henna 8">
+            <p>Temporary Henna Tattoos       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="henna">
+            <a href="./henna9.html"> <img src="Henna Hair Dye.jpg" alt="Henna 9">
+            <p>Henna Hair Dye       </p>
+        </a>
+        </div>
+
+        <!-- Bodypainting (9 images) -->
+        <div class="gallery-item1" data-category="bodypainting">
+           <a href="body1.html">  <img src="Body Art.jpg" alt="Bodypainting 1">
+            <p>Body Art       </p>
+        </a></a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body2.html"> <img src="BodyFace Painting.jpg" alt="Bodypainting 2">
+            <p>Body/Face Painting       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body3.html"> <img src="Body Contouring.jpg" alt="Bodypainting 3">
+            <p>Body Contouring       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body4.html"> <img src="Body Tattoos.jpg" alt="Bodypainting 4">
+            <p>Body Tattos       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body5.html"> <img src="Camouflage Body Painting.webp" alt="Bodypainting 5">
+            <p>Camouflage Body Painting       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body6.html"> <img src="Performance Body Painting.jpg" alt="Bodypainting 6">
+            <p>Performance Body Painting       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body7.html"> <img src="Special Effects Body Painting.jpg" alt="Bodypainting 7">
+            <p>Special Effects Body Painting       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body8.html"> <img src="Fantasy Body Painting.jpg" alt="Bodypainting 8">
+            <p>Fantasy Body Painting       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="bodypainting">
+            <a href="body9.html"> <img src="CulturalTraditional Body Painting.jpg" alt="Bodypainting 9">
+            <p>Cultural/Traditional Body Painting       </p>
+        </a>
+        </div>
+
+        <!-- Tattoo Touch-ups (9 images) -->
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="touch1.html"> <img src="Detail Enhancement.avif" alt="Tattoo Touch-up 1">
+            <p>Detail Enhancement       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="touch2.html"> <img src="Line Work Reinforcement.webp" alt="Tattoo Touch-up 2">
+            <p>Line Work Reinforcement       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="touch3.html"> <img src="Color Refresh.jpg" alt="Tattoo Touch-up 3">
+            <p>Color Refreshment       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="touch4.html"> <img src="Correction of Mistakes.jpg" alt="Tattoo Touch-up 4">
+            <p>Correction of Mistakes       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="touch5.html"> <img src="Cover-Up Touch-Up.jpg" alt="Tattoo Touch-up 5">
+            <p>Cover-Up Touch-Up       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="touch6.html"> <img src="Texture and Shading Enhancement.avif" alt="Tattoo Touch-up 6">
+            <p>Texture and Shading Enhancement       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="./touch7.html"> <img src="Scar and Skin Issue Correction.jpeg" alt="Tattoo Touch-up 7">
+            <p>Scar and Skin Issue Correction       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="./touch8.html"> <img src="Design Adjustment.jpg" alt="Tattoo Touch-up 8">
+            <p>Design Adjustment       </p>
+        </a>
+        </div>
+        <div class="gallery-item1" data-category="tattoo-touchups">
+            <a href="./touch9.html"> <img src="Color Matching.jpg" alt="Tattoo Touch-up 9">
+            <p>Color Matching       </p>
+        </a>
+        </div>
+
+    </div>
+
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter-section">
+        <h2>Stay Updated</h2>
+        <p style="margin-top: -35px;">Subscribe to our newsletter to receive the latest news, offers, and updates.
+               </p>
+        
+        <form id="newsletter-form" action="#" method="post" style="margin-top: 20px;">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <!-- Popup Section -->
+        <div id="popup" class="popup">
+            <p>Subscribed Successfully!       </p>
+        
+            <button id="close-popup" style="background-color: #b2925a;">Close</button>
+        </div>
+    </section>
+</div>
+
+
+        <footer class="page-foot">
+            <section class="footer-content bg-darker" style="width: 100%;">
+                <div class="container">
+                    <div class="row row-45 text-start">
+                        <div class="col-md-6 col-xl-3">
+                            <h3>About Us</h3>
+                            <p class="letter-spacing-30">Body Art is a broad and expressive form of art that involves decorating, modifying, or altering the human body.       </p>
+        
+                            <address class="offset-top-25">
+                  <dl class="dl-horizontal-mod-1 clearfix">
+                    <dt><i class="bi bi-telephone-fill"></i></dt>
+                    <dd><a class="link-white" href="tel:#">+040- 856-789-78</a></dd>
+                  </dl>
+                  <dl class="dl-horizontal-mod-1 clearfix">
+                    <dt><i class="bi bi-envelope-fill"></i></dt>
+                    <dd><a class="link-white" href="mailto:#">BodyPoetry@demolink.org</a></dd>
+                  </dl>
+                  <dl class="dl-horizontal-mod-1 clearfix">
+                    <dt><i class="bi bi-geo-alt-fill"></i></dt>
+                    <dd><a class="link-white" >Madhapur <br> Hyderabad, Telangana</a></dd>
+                  </dl>
+                </address>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <h3>Gallery</h3>
+                            <!-- RD Flickr-->
+                            <div class="flickr" data-lightgallery="group">
+                                <div class="flickr-item"><img src="images/footer-gallery-1-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-2-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-3-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-4-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-5-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-6-150x150.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <h3>Opening Hours</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Monday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Tuesday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Wednesday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Thursday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Friday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Saturday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Sunday:</dt>
+                                        <dd class="text-white">Closed</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <h3>Useful Links</h3>
+                            <ul class="list-marked-variant-1">
+                                <li><a class="link-base" href="index.html">Home</a></li>
+                                <li><a class="link-base" href="about.html">About</a></li>
+                                <li><a class="link-base" href="service.html">Services</a></li>
+                                <li><a class="link-base" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="link-base" href="blog.html">Blog</a></li>
+                                <li><a class="link-base" href="contact.html">Contact Us</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="copyright bg-darkest" style="width: 100%;">
+                <div class="container">
+                    <div class="row row-10 justify-content-md-between align-items-md-center">
+                        <div class="col-md-6 col-lg-4 text-md-start">
+                            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>BodyPoetry</span><span>.&nbsp;</span><a class="link-base" href=".html">Privacy Policy</a>       </p>
+        
+                        </div>
+                        <div class="col-md-6 col-lg-6 text-md-end"><span class="text-white fst-italic">Follow Us:</span>
+                            <ul class="list-inline">
+                                <a href="https://www.facebook.com/login/"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/i/flow/login"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-twitter"></i></a>
+                                <a href="https://myaccount.google.com/?nlr=1"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-google"></i></a>
+                                <a href="https://www.instagram.com/accounts/login/?hl=en"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-instagram"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Java script-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+        <!-- Font Awesome Icons -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+   
+        <!-- ---------------categories gallery-------------- -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterButtons = document.querySelectorAll('.filter-button');
+                const galleryItems = document.querySelectorAll('.gallery-item1');
+    
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const category = button.getAttribute('data-category');
+    
+                        galleryItems.forEach(item => {
+                            if (category === 'all' || item.getAttribute('data-category') === category) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+    
+        </script>
+    
+    <!-- -------------------newsletter---------------------- -->
+    <script>
+        const form = document.getElementById('newsletter-form');
+        const popup = document.getElementById('popup');
+        const closePopupBtn = document.getElementById('close-popup');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            popup.style.display = 'block'; // Show the popup
+        });
+    
+        closePopupBtn.addEventListener('click', function() {
+            popup.style.display = 'none'; // Hide the popup when "Close" is clicked
+        });
+    </script>
+    
+    <!-- ------------------Counter -------------------------->
+    <script>
+     // JavaScript for counting effect
+    const counters = document.querySelectorAll('.counter');
+    
+    counters.forEach(counter => {
+        counter.innerText = '0';
+    
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target'); // Get the target value
+            const current = +counter.innerText.replace('%', '').replace('+', ''); // Get the current value without the '%' or '+' symbol
+            const increment = target / 200; // Adjust speed of count
+    
+            if (current < target) {
+                counter.innerText = `${Math.ceil(current + increment)}`; // Increment the number
+                if (counter.getAttribute('data-target') == '100') {
+                    counter.innerText += '%'; // Add '%' for Premium Quality Ink
+                } else {
+                    counter.innerText += '+'; // Add '+' for others
+                }
+                setTimeout(updateCounter, 50); // Call updateCounter again after 50ms
+            } else {
+                // Ensure final value is shown with the correct symbol
+                if (counter.getAttribute('data-target') == '100') {
+                    counter.innerText = `${target}%`;
+                } else {
+                    counter.innerText = `${target}+`;
+                }
+            }
+        };
+    
+        updateCounter();
+    });
+    
+    
+    </script>
+    <!-- ------------------Counter -------------------------->
+
+    <!--LIVEDEMO_00 -->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7078796-5']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+
+</html>

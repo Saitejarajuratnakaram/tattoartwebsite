@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title> Services Body Art</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700%7CLibre+Baskerville:400,400italic,700%7CCourgette">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+       /* Style for the Customization button */
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"] {
+    background-color: #ec6c04; /* Change color as needed */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.rd-navbar-nav .rd-nav-item a.rd-nav-link[href="customization.html"]:hover {
+    background-color: #ec6c04; /* Hover color */
+}
+
+    
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            /* Prevents horizontal scrolling */
+
+            background-color: #1f1f1f;
+            color: white;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .container h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ec6c04;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact a.phone {
+            background-color: #1f1f1f;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .contact a:hover {
+            background-color: #ff4500;
+            /* Brighter red on hover */
+            transform: translateY(-5px);
+            /* Slight upward movement */
+        }
+
+        .contact a.phone:hover {
+            background-color: #333;
+            /* Darker background for phone hover */
+            border-color: #ff4500;
+            /* Change border to red on hover */
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: row;
+            background-color: #292929;
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            width: 50%;
+            /* Each service takes up half the container's width */
+        }
+
+        .service img {
+            height: 28vh;
+            width: 70vh;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        }
+
+        .service img:hover {
+            transform: scale(1.05);
+            /* Slight zoom-in */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            /* Adds a shadow effect */
+            filter: brightness(1.0);
+            /* Makes the image slightly brighter */
+        }
+
+        .service-content {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .service-content h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .service-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        .service-content a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ec6c04;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .service-content a:hover {
+            background-color: #ff4500;
+            transform: translateY(-5px);
+        }
+        /* ----------------------------------------------- */
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="page text-center">
+        <header class="section page-head page-head-default">
+            <!--RD Navbar-->
+            <div class="rd-navbar-wrap" style="background: #2d2d31;">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="117px" data-xxl-stick-up-offset="117px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" type="submit"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand-name" href="index.html">BodyPoetry</a></div>
+                        </div>
+                        <div class="rd-navbar-nav-wrap">
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About </a>
+                                </li>
+                                <li class="rd-nav-item  active"><a class="rd-nav-link" href="service.html">Services </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">Portfolio </a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="customization.html">
+                                        <i class="bi bi-brush"></i> Customization
+                                    </a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ----------------------------------------- -->
+        <div class="container">
+            <h1 style="color: black; margin-top: 100px; ">Our Services</h1>
+            <p style="color: black; ">Are you ready to transform your body into a work of art? Look no further than Tatt 'Em Up Tattoos &
+                Piercings, the ultimate destination for exquisite tattoos, expert body piercings, and a stunning collection
+                of body jewelry in Miami.</p>
+    
+            <div class="contact">
+                <a href="tel:7863776817" class="phone">📞 786-377-6817</a>
+                <a href="booking.html">📧 Book</a>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="tatto1.jpg" alt="Tattooing">
+                    <div class="service-content">
+                        <h2>Tattooing</h2>
+                        <p> Our professional tattooists ensure safe and quality work.</p>
+                        <ul>
+                            <li><strong>Price:</strong> Starts at $100 per hour</li>
+                            <li><strong>Duration:</strong> 1-5hrs depend on the design</li>
+                        </ul>
+                        <a href="tattoing.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="micro1.jpg" alt="Microblading">
+                    <div class="service-content">
+                        <h2>Microblading</h2>
+                        <p> natural-looking brows through our microblading services.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $300 per session</li>
+                            <li><strong>Duration:</strong> 2-3 hours per session</li>
+    
+                        </ul>
+                        <a href="microbleading.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services">
+                <div class="service">
+                    <img style="width: 40vh;" src="tattoremovel2.jpg" alt="Tattoo Removal">
+                    <div class="service-content">
+                        <h2>Tattoo Removal</h2>
+                        <p>Our tattoo removal services are safe to your individual needs.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per session</li>
+                            <li><strong>Duration:</strong> 1-2 hrs </li>
+    
+                        </ul>
+                        <a href="tattoremovel.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="parmenent1.avif" alt="Permanent Makeup">
+                    <div class="service-content">
+                        <h2>Permanent Makeup</h2>
+                        <p> Our permanent makeup services include eyeliner, and more.</p>
+                        <ul>
+                            <li><strong>Price:</strong> Starting at $250 per procedure</li>
+                            <li><strong>Duration:</strong> 1-2 hours per procedure</li>
+    
+                        </ul>
+                        <a href="permanentmakeup.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services">
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="bodypaint1.jpg" alt="Body Painting">
+                    <div class="service-content">
+                        <h2>Body Painting</h2>
+                        <p>Turn your body into a canvas with our professional body painting services.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $200 per hour</li>
+                            <li><strong>Duration:</strong> Varies by design (2-4 hours on average)</li>
+    
+                            <a href="bodypainting.html">Learn more</a>
+                            <a href="booking.html">Book</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="henna1.jpg" alt="Henna Art">
+                    <div class="service-content">
+                        <h2>Henna Art</h2>
+                        <p>Celebrate tradition or explore something new with intricate henna designs crafted by skilled
+                            artists.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $100 per design</li>
+                            <li><strong>Duration:</strong> 1-2 hours</li>
+                        </ul>
+                        <a href="henna.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services">
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="scarcoverup1.jpg" alt="Scar Cover-Up Tattoos">
+                    <div class="service-content">
+                        <h2>Scar Cover-Up Tattoos</h2>
+                        <p>Transform your scars into beautiful works of art with our specialized cover-up tattoo services.
+                        </p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per hour</li>
+                            <li><strong>Duration:</strong> Depends on size and complexity (2-6 hours)</li>
+                        </ul>
+                        <a href="scarcoverup.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="tattooaftercare1.webp" alt="Tattoo Aftercare Products">
+                    <div class="service-content">
+                        <h2>Tattoo Aftercare Products</h2>
+                        <p>Keep your new ink looking fresh and vibrant with our selection of premium tattoo aftercare
+                            products.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per 30grms</li>
+                        </ul>
+                        <a href="tattooaftercare.html">Learn more</a>
+                        <a href="booking.html">Book</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services">
+                <div class="service">
+                    <img style="width: 35vh;" src="consulatation1.jpg" alt="Consultations">
+                    <div class="service-content">
+                        <h2>Consultations</h2>
+                        <p>Schedule a consultation with our artists to discuss your tattoo ideas and receive personalized
+                            advice.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per hour</li>
+                        </ul>
+                        <a href="consultations.html">Learn more</a>
+                        <a href="booking.html">Book Now</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="customartcommisions.webp" alt="Custom Art Commissions">
+                    <div class="service-content">
+                        <h2>Custom Art Commissions</h2>
+                        <p>Bring your artistic visions to life with custom tattoo designs and artwork commissioned by our
+                            talented artists.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per hour</li>
+                            <li><strong>Duration:</strong> Depends on size and complexity (2-6 hours)</li>
+                        </ul>
+                        <a href="customart.html">Learn more</a>
+                        <a href="booking.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services">
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="tattotouchups.webp" alt="Tattoo Touch-Ups">
+                    <div class="service-content">
+                        <h2>Tattoo Touch-Ups</h2>
+                        <p>Refresh your old tattoos and make them look brand new with our tattoo touch-up services.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per hour</li>
+                            <li><strong>Duration:</strong> Depends on size and complexity (2-6 hours)</li>
+                        </ul>
+                        <a href="tattotouchup.html">Learn more</a>
+                        <a href="booking.html">Book Now</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="bodyjewel1.jpg" alt="Body Jewelry Sales">
+                    <div class="service-content">
+                        <h2>Body Jewelry Sales</h2>
+                        <p>Shop our extensive collection of body jewelry to find the perfect accessories for your piercings.
+                        </p>
+                        <ul>
+                            <li><strong>Price:</strong> $150</li>
+                        </ul>
+                        <a href="bodyjewerly.html">Learn more</a>
+                        <a href="booking.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services">
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="bodyartworkshop1.jpg" alt="Body Art Workshops">
+                    <div class="service-content">
+                        <h2>Body Art Workshops</h2>
+                        <p>Join our workshops to learn the art of tattooing, piercing, and more from industry professionals.
+                        </p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per hour</li>
+                            <li><strong>Duration:</strong> Depends on size and complexity (2-6 hours)</li>
+                        </ul>
+                        <a href="bodyartworkshop.html">Learn more</a>
+                        <a href="booking.html">Book Now</a>
+                    </div>
+                </div>
+                <div class="service">
+                    <img style="height: 28vh; width: 70vh;" src="artandmerchandis1.webp" alt="Art and Merchandise">
+                    <div class="service-content">
+                        <h2>Art and Merchandise</h2>
+                        <p>Browse our unique art and merchandise, including prints, apparel, and more, created by our
+                            in-house artists.</p>
+                        <ul>
+                            <li><strong>Price:</strong> $150 per Design</li>
+                            <li><strong>Duration:</strong> Depends on complexity (2-6 hours)</li>
+                        </ul>
+                        <a href="artandmerchandis.html">Learn more</a>
+                        <a href="booking.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services"></div>
+            <div class="service">
+                <img style="height: 28vh; width: 70vh;" src="pearcing1.jpg" alt="Body Art Workshops">
+                <div class="service-content">
+                    <h2>Piercing</h2>
+                    <p>Join our workshops to learn the art of tattooing, piercing, and more from industry professionals.</p>
+                    <ul>
+                        <li><strong>Price:</strong> $140 per hour</li>
+                    </ul>
+                    <a href="piercing.html">Learn more</a>
+                    <a href="booking.html">Book Now</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+        </div>
+        <footer class="page-foot">
+            <section class="footer-content bg-darker">
+                <div class="container">
+                    <div class="row row-45 text-start">
+                        <div class="col-md-6 col-xl-3">
+                            <h3>About Us</h3>
+                            <p class="letter-spacing-30">Body Art is a broad and expressive form of art that involves decorating, modifying, or altering the human body.</p>
+                            <address class="offset-top-25">
+                  <dl class="dl-horizontal-mod-1 clearfix">
+                    <dt><i class="bi bi-telephone-fill"></i></dt>
+                    <dd><a class="link-white" href="tel:#">+040- 856-789-78</a></dd>
+                  </dl>
+                  <dl class="dl-horizontal-mod-1 clearfix">
+                    <dt><i class="bi bi-envelope-fill"></i></dt>
+                    <dd><a class="link-white" href="mailto:#">BodyPoetry@demolink.org</a></dd>
+                  </dl>
+                  <dl class="dl-horizontal-mod-1 clearfix">
+                    <dt><i class="bi bi-geo-alt-fill"></i></dt>
+                    <dd><a class="link-white" >Madhapur <br> Hyderabad, Telangana</a></dd>
+                  </dl>
+                </address>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <h3>Gallery</h3>
+                            <!-- RD Flickr-->
+                            <div class="flickr" data-lightgallery="group">
+                                <div class="flickr-item"><img src="images/footer-gallery-1-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-2-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-3-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-4-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-5-150x150.jpg" alt=""></a></div>
+                                <div class="flickr-item"><img src="images/footer-gallery-6-150x150.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <h3>Opening Hours</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Monday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Tuesday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Wednesday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Thursday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Friday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Saturday:</dt>
+                                        <dd class="text-white">8 am-10 pm</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="dl-horizontal-mod-2">
+                                        <dt>Sunday:</dt>
+                                        <dd class="text-white">Closed</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <h3>Useful Links</h3>
+                            <ul class="list-marked-variant-1">
+                                <li><a class="link-base" href="index.html">Home</a></li>
+                                <li><a class="link-base" href="about.html">About</a></li>
+                                <li><a class="link-base" href="service.html">Services</a></li>
+                                <li><a class="link-base" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="link-base" href="blog.html">Blog</a></li>
+                                <li><a class="link-base" href="contact.html">Contact Us</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="copyright bg-darkest">
+                <div class="container">
+                    <div class="row row-10 justify-content-md-between align-items-md-center">
+                        <div class="col-md-6 col-lg-4 text-md-start">
+                            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>BodyPoetry</span><span>.&nbsp;</span><a class="link-base" href=".html">Privacy Policy</a></p>
+                        </div>
+                        <div class="col-md-6 col-lg-6 text-md-end"><span class="text-white fst-italic">Follow Us:</span>
+                            <ul class="list-inline">
+                                <a href="https://www.facebook.com/login/"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-facebook"></i></a>
+                                <a href="https://x.com/i/flow/login"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-twitter"></i></a>
+                                <a href="https://myaccount.google.com/?nlr=1"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-google"></i></a>
+                                <a href="https://www.instagram.com/accounts/login/?hl=en"  style="    margin: 5px; color: #ec6c04;"><i class="bi bi-instagram"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Java script-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--LIVEDEMO_00 -->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7078796-5']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
+    </script>
+    <!-- End Google Tag Manager -->
+</body>
+
+</html>
