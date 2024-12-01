@@ -1,0 +1,452 @@
+
+    /* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #f3f3ee;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Welcome Section */
+.welcome-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('m1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcome-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.welcome-content {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.welcome-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ff4500;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #e63900;
+}
+
+/* Difference Section */
+.difference-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #2e2e2e;
+  color: #f3f3ee;
+  animation: slideUp 1.5s ease-out;
+}
+
+.difference-text {
+  width: 55%;
+}
+
+.difference-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.difference-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.mission-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #e63900;
+}
+
+.difference-image {
+  width: 40%;
+  text-align: center;
+}
+
+.difference-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Company Overview Section */
+.company-overview-section {
+  background-color: #1d1d1d;
+  padding: 60px;
+  text-align: center;
+  color: #f3f3ee;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.company-overview-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.company-overview-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Artist Profiles Section */
+.artist-profiles-section {
+  background-color: #2e2e2e;
+  padding: 60px;
+  text-align: center;
+  color: #f3f3ee;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.artist-profiles-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.artist-profiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist-card {
+  width: 30%;
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: scale(1.05);
+  background-color: #444;
+}
+
+.artist-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.artist-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.artist-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Studio Tour Section */
+.studio-tour-section {
+  background-color: #1d1d1d;
+  padding: 60px;
+  text-align: center;
+  color: #f3f3ee;
+  animation: fadeInUp 1.8s ease-in-out;
+}
+
+.studio-tour-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.studio-tour-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.studio-tour-gallery img {
+  width: 30%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.studio-tour-gallery img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Updated Contact Form Section */
+.updated-contact-form {
+  padding: 60px;
+  background-color: #2e2e2e;
+  color: #f3f3ee;
+  text-align: center;
+}
+
+.updated-contact-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Contact and Form Section */
+.contact-form-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info, .sign-up-form {
+  width: 45%;
+}
+
+.contact-info h3, .sign-up-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p, .sign-up-form p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #ff4500;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #e63900;
+}
+
+/* Sign Up Form */
+.sign-up-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.sign-up-form button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-form button:hover {
+  background-color: #e63900;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    background-color: #3b5998; /* Default Facebook color */
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon.instagram {
+    background-color: #E1306C; /* Instagram color */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon i {
+    vertical-align: middle;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Adds space between images */
+    padding: 20px; /* Optional padding around the gallery */
+    justify-items: center; /* Aligns images horizontally in the center */
+}
+
+.image-gallery img {
+    width: 100%; /* Make each image take full width of its grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional, to give images slightly rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional, to add a slight shadow */
+    transition: transform 0.3s ease-in-out; /* Animation on hover */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.form-group .error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
